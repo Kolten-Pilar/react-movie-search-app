@@ -1,4 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const Title = styled.h1`
+  font-size: 3rem;
+  color: red;
+`
 
 function MovieDisplay({ movie }) {
   // function to return loaded JSX
@@ -6,7 +12,7 @@ function MovieDisplay({ movie }) {
     return (
       <>
         <div>
-          <h1>{movie.Title}</h1>
+          <Title>{movie.Title}</Title>
           <h2>Genre: {movie.Genre}</h2>
           <h2>Rated: {movie.Rated}</h2>
           <img src={movie.Poster} alt={movie.Title} />

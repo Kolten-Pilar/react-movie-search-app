@@ -3,6 +3,12 @@ import Form from './components/Form'
 import MovieDisplay from './components/MovieDisplay'
 import styled from 'styled-components'
 
+const Container = styled.div`
+  width: 80%;
+  margin: auto;
+  text-align: center;
+`
+
 function App() {
   const apiKey = '307567c1'
   const [movie, setMovie] = useState(null)
@@ -24,10 +30,10 @@ function App() {
   
 
   return (
-    <>
+    <Container>
       <Form movieSearch={getMovie}/>
       <MovieDisplay movie={movie}/>
-    </>
+    </Container>
   )
 }
 
