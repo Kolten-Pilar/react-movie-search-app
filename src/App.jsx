@@ -4,9 +4,12 @@ import MovieDisplay from './components/MovieDisplay'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  width: 80%;
-  margin: auto;
+  width: 100%;
   text-align: center;
+  background: #A8FF6E;
+  background: -moz-linear-gradient(top, #A8FF6E 0%, #F5F5F5 100%);
+  background: -webkit-linear-gradient(top, #A8FF6E 0%, #F5F5F5 100%);
+  background: linear-gradient(to bottom, #A8FF6E 0%, #F5F5F5 100%);
 `
 
 function App() {

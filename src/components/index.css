@@ -1,0 +1,53 @@
+h1 {
+  font-size: 3rem;
+  color: #FFF;
+  background-color: #232323;
+  width: 35%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-shadow: 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  border-radius: 30px;
+}
+
+h1:hover {
+  color: red;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #FFF;
+  background-color: #232323;
+  width: 50%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-shadow: 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  border-radius: 30px;
+}
+
+h2:hover {
+  color: red;
+}
+
+.movie {
+  margin-top: 40px;
+  box-shadow: 0 0 15px #000, 0 0 75px #49ff18;
+  padding: auto;
+}
+
+.movie:hover {
+  box-shadow: 0 0 20px red;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.leftSide {
+  width: 80%;
+  padding: 1rem;
+}
+

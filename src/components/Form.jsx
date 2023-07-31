@@ -1,4 +1,34 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
+
+const Container = styled.form`
+display: flex;
+flex-direction: column;
+justify-items: center;
+box-shadow: 2px 1px 10px 5px; 
+width: 50%;
+margin: auto;
+
+`
+const Button = styled.input`
+color: #FFF;
+background-color: #232323;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+height: 50px;
+font-size: 1.5rem;
+cursor: pointer;
+border-radius: 30px;
+&:hover { color: red;}
+`
+
+const myForm = {
+  height: '50px',
+  fontSize: '2.5rem',
+  textAlign: 'center',
+  boxShadow: '0 0 5px #49ff18, 0 0 10px #49FF18, 0 0 15px #49FF18, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18',
+  borderRadius: '30px',
+}
+
 
 function Form({ movieSearch }) {
 
@@ -21,10 +51,10 @@ function Form({ movieSearch }) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={form.searchTerm} onChange={handleChange}/>
-        <input type="submit" value='submit' />
-      </form>
+      <Container onSubmit={handleSubmit}>
+          <input style={myForm} placeholder='Search for a Movie' type="text" value={form.searchTerm} onChange={handleChange} />
+          <Button type="submit" value='Submit' /> 
+      </Container>
     </div>
   )
 }
