@@ -7,6 +7,7 @@ flex-direction: column;
 justify-items: center;
 box-shadow: 2px 1px 10px 5px; 
 width: 50%;
+background-color: #232323;
 margin: auto;
 
 `
